@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Enquire — Safar Journeys</title>
+<meta name="description" content="Send us your dates and traveller count. We'll come back within one working day with a costed, day-by-day itinerary — free of charge.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230e6f80'/%3E%3Cpath d='M4 12l16-7-7 16-2-7-7-2z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header scrolled">
+  <div class="wrap header__row">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l19-9-9 19-2-8-8-2z"/></svg>
+      </span>
+      <span>Safar Journeys<span class="brand__sub">Tours &amp; Travel</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Tour Packages</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Plan My Trip</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary btn--sm header__cta">Plan My Trip</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero hero--page">
+  <div class="hero__media">
+    <img src="assets/img/kerala.jpg" alt="Kerala backwaters at dusk">
+  </div>
+  <div class="wrap hero__inner">
+    <div class="crumbs"><a href="index.html">Home</a><i>/</i><b>Contact</b></div>
+    <h1>Tell us about the trip</h1>
+    <p class="hero__text">Fill this in and a travel manager replies within one working day with a costed, day-by-day itinerary. Free, and yours to keep even if you don't book.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid" style="grid-template-columns:1.45fr 1fr;gap:34px;align-items:start">
+
+      <!-- ---------- ENQUIRY FORM ---------- -->
+      <div class="form rv">
+        <span class="eyebrow">Enquiry form</span>
+        <h2 style="font-size:1.7rem;margin-bottom:8px">Request your itinerary</h2>
+        <p style="margin-bottom:26px">The more detail you give, the sharper the first draft. Everything is optional except your name and a way to reach you.</p>
+
+        <form data-form novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="c-name">Full name *</label>
+              <input id="c-name" name="name" type="text" placeholder="Your name" required>
+              <span class="err">Please tell us your name.</span>
+            </div>
+            <div class="form__group">
+              <label for="c-email">Email *</label>
+              <input id="c-email" name="email" type="email" placeholder="you@example.com" required>
+              <span class="err">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="c-phone">Phone / WhatsApp *</label>
+              <input id="c-phone" name="phone" type="tel" placeholder="+91 98765 43210" data-phone required>
+              <span class="err">Please enter a reachable phone number.</span>
+            </div>
+            <div class="form__group">
+              <label for="c-city">Departure city</label>
+              <input id="c-city" name="city" type="text" placeholder="Bengaluru">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="c-dest">Destination</label>
+              <input id="c-dest" name="destination" type="text" list="dest-list" placeholder="Kerala, Bali, not sure yet…">
+              <datalist id="dest-list">
+                <option>Kerala</option><option>Munnar</option><option>Coorg</option><option>Rajasthan</option>
+                <option>Agra &amp; Delhi</option><option>Varanasi</option><option>Rishikesh</option>
+                <option>Ladakh</option><option>Spiti Valley</option><option>Himachal Pradesh</option>
+                <option>Kashmir</option><option>Meghalaya</option><option>Goa</option>
+                <option>Andaman Islands</option><option>Bali</option><option>Thailand</option>
+                <option>Singapore</option><option>Dubai</option><option>Not sure yet</option>
+              </datalist>
+            </div>
+            <div class="form__group">
+              <label for="c-month">Travel month</label>
+              <select id="c-month" name="month">
+                <option value="">Flexible</option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="c-pax">Travellers</label>
+              <select id="c-pax" name="travellers">
+                <option>2 Adults</option>
+                <option>1 Adult</option>
+                <option>2 Adults, 1 Child</option>
+                <option>4+ Adults</option>
+                <option>Group / Corporate</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="c-budget">Budget per person</label>
+              <select id="c-budget" name="budget">
+                <option>Not decided</option>
+                <option>Under ₹25,000</option>
+                <option>₹25,000 – ₹50,000</option>
+                <option>₹50,000 – ₹1,00,000</option>
+                <option>₹1,00,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="c-msg">Anything we should know?</label>
+            <textarea id="c-msg" name="message" placeholder="Anniversary trip, my mother uses a wheelchair, we'd rather not drive more than 4 hours a day, we love local food…"></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit" style="width:100%">
+            Send My Enquiry
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <div class="form__ok"></div>
+
+          <p style="text-align:center;font-size:.82rem;color:var(--muted);margin-top:14px">
+            We reply within one working day. No spam, no call-centre follow-ups.
+          </p>
+        </form>
+      </div>
+
+      <!-- ---------- CONTACT DETAILS ---------- -->
+      <div class="rv">
+        <div class="form" style="padding:28px;margin-bottom:20px">
+          <h3 style="margin-bottom:18px">Travel desk</h3>
+
+          <div class="feat" style="margin-bottom:18px">
+            <span class="feat__ic" style="width:44px;height:44px;border-radius:12px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5c0 8 7 15 15 15l1-4-5-2-2 2a13 13 0 01-5-5l2-2-2-5-4 1z"/></svg>
+            </span>
+            <div>
+              <b style="color:var(--ink);display:block;font-size:.95rem">Call us</b>
+              <a href="tel:+919876543210" style="color:var(--ocean-600);font-weight:600">+91 98765 43210</a>
+            </div>
+          </div>
+
+          <div class="feat" style="margin-bottom:18px">
+            <span class="feat__ic" style="width:44px;height:44px;border-radius:12px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+            </span>
+            <div>
+              <b style="color:var(--ink);display:block;font-size:.95rem">Email</b>
+              <a href="mailto:hello@safarjourneys.in" style="color:var(--ocean-600);font-weight:600">hello@safarjourneys.in</a>
+            </div>
+          </div>
+
+          <div class="feat" style="margin-bottom:18px">
+            <span class="feat__ic" style="width:44px;height:44px;border-radius:12px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 01-13.2 8L3 21l1.1-4.7A9 9 0 1121 12z"/></svg>
+            </span>
+            <div>
+              <b style="color:var(--ink);display:block;font-size:.95rem">WhatsApp</b>
+              <a href="https://wa.me/919876543210" style="color:var(--ocean-600);font-weight:600">Message the desk</a>
+            </div>
+          </div>
+
+          <div class="feat">
+            <span class="feat__ic" style="width:44px;height:44px;border-radius:12px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <div>
+              <b style="color:var(--ink);display:block;font-size:.95rem">Office</b>
+              <span style="font-size:.92rem;line-height:1.6">2nd Floor, MG Road<br>Bengaluru 560001, Karnataka</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form" style="padding:28px;background:var(--navy-800);border-color:transparent;color:#c3d6dd">
+          <h3 style="color:#fff;margin-bottom:14px">On-trip support</h3>
+          <p style="font-size:.93rem;color:#a9c2cb">
+            Travelling right now and need help? Your travel manager's number is on your itinerary PDF, and the desk
+            WhatsApp is monitored <b style="color:#fff">24 hours</b> for active travellers.
+          </p>
+          <a href="https://wa.me/919876543210" class="btn btn--sand" style="margin-top:18px;width:100%">Open WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section section--cream">
+  <div class="wrap" style="max-width:860px">
+    <div class="head head--center rv">
+      <span class="eyebrow" style="justify-content:center">Before you ask</span>
+      <h2>Common questions</h2>
+    </div>
+
+    <div class="rv">
+      <div class="acc on">
+        <button class="acc__q" type="button">How fast will I hear back? <i>+</i></button>
+        <div class="acc__a"><p>Within one working day, usually within a few hours. If your enquiry is for a travel date inside two weeks, say so in the message and we'll prioritise it.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">Is the itinerary really free? <i>+</i></button>
+        <div class="acc__a"><p>Yes. You receive a costed day-by-day plan at no charge and with no obligation. We only ask for payment once you decide to confirm, and then it's a 25% advance to block your hotels.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">How many revisions do I get? <i>+</i></button>
+        <div class="acc__a"><p>As many as it takes. Most travellers go through two to four drafts — swapping hotels, adding a city, trimming a day. Nothing is billed for planning.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">Can you handle large groups or corporate offsites? <i>+</i></button>
+        <div class="acc__a"><p>Yes — family groups up to 30 and corporate offsites with meetings, transport and team activities. Choose "Group / Corporate" in the travellers field and we'll route you to the group desk.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">What about visas and insurance? <i>+</i></button>
+        <div class="acc__a"><p>We handle visa documentation and appointment scheduling for Bali, Thailand, Singapore, Dubai and Schengen. Travel insurance is arranged through our partners — we'll quote it alongside the trip.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">Do you book flights? <i>+</i></button>
+        <div class="acc__a"><p>We book domestic and international flights for confirmed bookings, and we'll always show you the fare before ticketing. If you've already bought your flights, we work the itinerary around your arrival and departure.</p></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc__q" type="button">What is the cancellation policy? <i>+</i></button>
+        <div class="acc__a"><p>It depends on how close you are to departure and what the hotels and airlines allow — we pass their terms through without adding our own penalty. Full terms are printed on every quotation before you pay anything.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l19-9-9 19-2-8-8-2z"/></svg>
+          </span>
+          <span>Safar Journeys<span class="brand__sub">Tours &amp; Travel</span></span>
+        </a>
+        <p class="footer__about">Curated domestic and international holidays since 2008. Private departures, verified stays, and a travel desk that stays with you for the whole journey.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M15 3h-2.5A4.5 4.5 0 008 7.5V10H5v4h3v7h4v-7h3l1-4h-4V8a1 1 0 011-1h3V3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M11 9.5l4 2.5-4 2.5v-5z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 12a9 9 0 01-13.2 8L3 21l1.1-4.7A9 9 0 1121 12z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Tour Packages</a>
+        <a href="packages.html">Honeymoon Specials</a>
+        <a href="packages.html">Group Departures</a>
+        <a href="packages.html">Corporate Offsites</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html">Our Team</a>
+        <a href="about.html">Why Safar</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Careers</a>
+      </div>
+      <div>
+        <h4>Travel Desk</h4>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <a href="mailto:hello@safarjourneys.in">hello@safarjourneys.in</a>
+        <p style="padding:6px 0;line-height:1.7">2nd Floor, MG Road<br>Bengaluru 560001, Karnataka</p>
+        <p style="padding-top:10px;font-size:.84rem;color:#6d8894">Mon–Sat · 9:30am – 7:30pm IST</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© <span data-year>2026</span> Safar Journeys. All rights reserved.</span>
+      <span>Privacy Policy · Terms · Cancellation &amp; Refunds</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210" class="wa" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.5-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5v-.4c0-.1-.5-1.3-.7-1.7-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 2.6 1 2.6.7 3.1.6.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
